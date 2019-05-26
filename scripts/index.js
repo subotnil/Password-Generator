@@ -19,9 +19,3 @@ function generatePassword() {
         document.getElementById("account").value = '';
     }
 }
-
-function copyToClipboard() {
-    var copyText = document.getElementById("password-display");
-    copyText.select();
-    document.execCommand("copy");
-}
