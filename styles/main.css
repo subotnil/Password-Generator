@@ -15,12 +15,12 @@ body {
 }
 
 input {
-    margin-top: 32px;
-    margin-left: 32px;
+    position: relative;
+    margin: 32px;
     padding-left: 30px;
     padding-right: 30px;
-    width: 253px;
     height: 43px;
+    width: calc(100% - 124px);
     background: #FFFFFF;
     border: none;
     border-radius: 21.5px;
@@ -59,12 +59,14 @@ button:active {
 
 #password-display {
     display: block;
+    overflow: auto;
     height: auto;
-    margin-top: 32px;
+    padding-right: 30px;
+    width: calc(100% - 124px);
     margin-left: 32px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 15px;
     color: black;
     letter-spacing: 0.19px;
     text-align: left;
@@ -77,10 +79,8 @@ td {
 footer {
     position: fixed;
     bottom: 0;
-    float: right;
-    margin-top: 32px;
-    right: 32px;
-    margin-bottom: 32px;
+    right: 16px;
+    margin-bottom: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 13px;

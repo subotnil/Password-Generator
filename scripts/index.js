@@ -2,13 +2,14 @@ var password = "";
 function generatePassword() {
     if (event.keyCode == 13) {
         var accountName = document.getElementById("account").value;
-        var length = "8";
+        var length = "16";
         password = "";
         var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         var charactersLength = characters.length;
         for (var i = 0; i < length; i++) {
             password += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
+        document.getElementById("footer").style.display = "none";
         document.getElementById("password-display").style.display = "block";
         var table = document.getElementById("password-display");
         var row = table.insertRow(0);
