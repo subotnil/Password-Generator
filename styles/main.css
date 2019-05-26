@@ -57,6 +57,10 @@ button:active {
     transform: scale(.9);
 }
 
+#copy-button {
+    display: none;
+}
+
 #password-display {
     display: block;
     overflow: auto;

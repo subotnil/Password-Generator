@@ -11,6 +11,7 @@ function generatePassword() {
         }
         document.getElementById("footer").style.display = "none";
         document.getElementById("password-display").style.display = "block";
+        //document.getElementById("copy-button").style.display = "block";
         var table = document.getElementById("password-display");
         var row = table.insertRow(0);
         var cell1 = row.insertCell(0);
@@ -19,4 +20,10 @@ function generatePassword() {
         cell2.innerHTML = password;
         document.getElementById("account").value = '';
     }
+}
+
+function copyToClipboard() {
+    var copyText = document.getElementById("password-display");
+    copyText.select();
+    document.execCommand("copy");
 }
