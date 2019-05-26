@@ -48,6 +48,7 @@ button {
     color: #000000;
     letter-spacing: 0.19px;
     text-align: center;
+    -webkit-appearance: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
