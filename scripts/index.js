@@ -10,7 +10,6 @@ function generatePassword() {
             password += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
         document.getElementById("password-display").style.display = "block";
-        document.getElementById("copy-button").style.display = "block";
 
         var table = document.getElementById("password-display");
         var row = table.insertRow(0);
