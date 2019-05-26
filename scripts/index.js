@@ -1,6 +1,6 @@
 var password = "";
 function generatePassword() {
-    if (event.keyCode == 13) {
+    if (event.keyCode == "13") {
         var accountName = document.getElementById("account").value;
         var length = "8";
         password = "";
