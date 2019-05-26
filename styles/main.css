@@ -19,7 +19,7 @@ input {
     margin-left: 32px;
     padding-left: 30px;
     padding-right: 30px;
-    width: 253px;
+    width: 283px;
     height: 43px;
     background: #FFFFFF;
     border: none;
@@ -30,16 +30,15 @@ input {
     color: #000000;
     letter-spacing: 0.19px;
     text-align: left;
-    -webkit-appearance: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    margin-left: 32px;
-    margin-top: 32px;
-    margin-bottom: 32px;
     width: 144px;
     height: 43px;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-bottom: 32px;
     background: #FFFFFF;
     border: none;
     border-radius: 21.5px;
@@ -71,4 +70,30 @@ button:active {
 
 td {
     padding: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    float: right;
+    margin-top: 32px;
+    right: 32px;
+    margin-bottom: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 0.19px;
+    text-align: right;
+}
+
+a:hover {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
