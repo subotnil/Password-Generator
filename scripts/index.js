@@ -1,6 +1,6 @@
 var password = "";
 function generatePassword() {
-    if (event.keyCode == "13") {
+    if (event.keyCode == 13) {
         var accountName = document.getElementById("account").value;
         var length = "8";
         password = "";
@@ -10,7 +10,6 @@ function generatePassword() {
             password += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
         document.getElementById("password-display").style.display = "block";
-
         var table = document.getElementById("password-display");
         var row = table.insertRow(0);
         var cell1 = row.insertCell(0);
@@ -19,4 +18,10 @@ function generatePassword() {
         cell2.innerHTML = password;
         document.getElementById("account").value = '';
     }
+}
+
+function copyToClipboard() {
+    var copyText = document.getElementById("password-display");
+    copyText.select();
+    document.execCommand("copy");
 }
