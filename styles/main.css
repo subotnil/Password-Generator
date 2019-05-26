@@ -21,6 +21,7 @@ body {
     height: 43px;
     margin-left: 32px;
     background: #FFFFFF;
+    border: none;
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
