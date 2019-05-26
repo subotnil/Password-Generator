@@ -4,7 +4,6 @@ body {
     background-image: linear-gradient(90deg, #AF21DA 0%, #95303B 100%);
     height: 100%;
     touch-action: manipulation;
-    overflow: hidden;
 }
 
 #main-title {
@@ -16,23 +15,51 @@ body {
     text-align: center;
 }
 
-#generate-password-button {
-    width: 144px;
-    height: 43px;
+input {
+    margin-top: 32px;
     margin-left: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 311px;
+    height: 43px;
     background: #FFFFFF;
     border: none;
-    border-radius: 2px;
+    border-radius: 21.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.19px;
+    text-align: left;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 144px;
+    height: 43px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 21.5px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #000000;
     letter-spacing: 0.19px;
     text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(.9);
 }
 
 #password-display {
-    display: none;
+    display: block;
+    height: auto;
+    margin-top: 32px;
     margin-left: 32px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -40,4 +67,8 @@ body {
     color: #ffffff;
     letter-spacing: 0.19px;
     text-align: left;
+}
+
+td {
+    padding: 15px;
 }
