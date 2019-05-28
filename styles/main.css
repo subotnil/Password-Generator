@@ -73,18 +73,17 @@ input[type=range] {
     background: transparent; /* Otherwise white in Chrome */
 }
   
-  input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
   
-  input[type=range]:focus {
+input[type=range]:focus {
     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
   
   /*Styling the thumb in Chrome*/
-  input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-  
     height: 25px;
     width: 25px;
     border-radius: 50%;
