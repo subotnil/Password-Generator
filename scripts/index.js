@@ -1,9 +1,9 @@
 var slider = document.getElementById("password-length-slider");
-var sliderOutput = document.getElementById("character-length");
-sliderOutput.innerHTML = slider.value;
+var output = document.getElementById("character-length");
+output.innerHTML = slider.value;
 
 slider.oninput = function() {
-    sliderOutput.innerHTML = this.value;
+  output.innerHTML = this.value;
 }
 
 var password = "";

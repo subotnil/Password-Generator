@@ -35,6 +35,13 @@ body {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
+#account::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: gray;
+  }
+#account::-moz-placeholder { /* Firefox 19+ */
+    color: gray;
+  }
+
 #slider-container {
     position: relative;
     margin-left: 32px;
