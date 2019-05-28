@@ -1,3 +1,11 @@
+var slider = document.getElementById("password-length-slider");
+var sliderOutput = document.getElementById("character-length");
+sliderOutput.innerHTML = slider.value;
+
+slider.oninput = function() {
+    sliderOutput.innerHTML = this.value;
+}
+
 var password = "";
 function generatePassword() {
     if (event.keyCode == 13) {

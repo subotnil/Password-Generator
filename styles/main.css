@@ -5,15 +5,6 @@ body {
     touch-action: manipulation;
 }
 
-@media only screen and (max-width: 600px) {
-    input {
-        width: calc(100% - 124px);
-    }
-    #password-display {
-        width: calc(100% - 124px);
-    }
-}
-
 #main-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -23,13 +14,14 @@ body {
     text-align: center;
 }
 
-input {
+#account {
     position: relative;
-    margin: 32px;
+    margin-left: 32px;
+    margin-bottom: 16px;
     padding-left: 30px;
     padding-right: 30px;
     height: 43px;
-    width: 600px;
+    width: calc(100% - 124px);
     background: #FFFFFF;
     border: none;
     border-radius: 21.5px;
@@ -41,6 +33,43 @@ input {
     text-align: left;
     -webkit-appearance: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#slider-container {
+    position: relative;
+    margin-left: 32px;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    width: calc(100% - 124px);
+    background: white;
+    border: none;
+    border-radius: 21.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+    letter-spacing: 0.19px;
+    text-align: left;
+    -webkit-appearance: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#password-length-slider {
+    width: 100%;
+    margin-top: 16px;
+}
+  
+
+#slider-label {
+    padding-top: 16px;
+    margin-bottom: 0;
+}
+
+#slider-display {
+    margin-top: 0;
+    padding-bottom: 16px;
 }
 
 button {
@@ -75,7 +104,7 @@ button:active {
     overflow: auto;
     height: auto;
     padding-right: 30px;
-    width: 600px;
+    width: calc(100% - 124px);
     margin-left: 32px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;

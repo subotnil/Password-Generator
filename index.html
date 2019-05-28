@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Password Generator</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://subotnil.github.io/passgen/styles/main.css"
+  <link rel="stylesheet" href="https://subotnil.github.io/styles/main.css"
     type="text/css">
   <script src="https://subotnil.github.io/passgen/scripts/index.js"></script>
 </head>
@@ -16,6 +16,11 @@
     Password Generator
   </h1>
   <input id="account" type="text" placeholder="Enter account name" autocomplete="off" onkeydown="generatePassword()" alt="Account Name">
+  <div id="slider-container">
+      <p id="slider-label">Select password length</p>
+      <input id="password-length-slider" type="range" min="8" max="256" value="8" alt="Select Password Length">
+      <p id="slider-display"><span id="character-length"></span> Characters</p>
+  </div>
   <table id="password-display" alt=""></table>
   <footer id="footer">
     Made by <a href="https://github.com/subotnil" target="_blank" rel="noopener">Subotnil</a>
