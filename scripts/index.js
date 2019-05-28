@@ -1,16 +1,12 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
+function displayLength() {
+    document.getElementById("character-length").innerHTML = document.getElementById("password-length-slider").value;
 }
 
 var password = "";
 function generatePassword() {
     if (event.keyCode == 13) {
         var accountName = document.getElementById("account").value;
-        var passLength = "16";
+        var passLength = document.getElementById("password-length-slider").value;
         password = "";
         var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         var charactersLength = characters.length;

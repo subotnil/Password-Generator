@@ -18,8 +18,8 @@
   <input id="account" type="text" placeholder="Enter account name" autocomplete="off" onkeydown="generatePassword()" alt="Account Name">
   <div id="slider-container">
       <p id="slider-label">Select password length</p>
-      <input id="myRange" type="range" min="8" max="256" value="8" alt="Select Password Length" oninput="displayLength();">
-      <p id="slider-display"><span id="demo"></span> Characters</p>
+      <input id="password-length-slider" type="range" min="8" max="256" value="8" alt="Select Password Length" oninput="displayLength();">
+      <p id="slider-display"><span id="character-length">8</span> Characters</p>
   </div>
   <table id="password-display" alt=""></table>
   <footer id="footer">
