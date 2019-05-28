@@ -5,6 +5,15 @@ body {
     touch-action: manipulation;
 }
 
+@media only screen and (max-width: 600px) {
+    input {
+        width: calc(100% - 124px);
+    }
+    #password-display {
+        width: calc(100% - 124px);
+    }
+}
+
 #main-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -20,7 +29,7 @@ input {
     padding-left: 30px;
     padding-right: 30px;
     height: 43px;
-    width: calc(100% - 124px);
+    width: 600px;
     background: #FFFFFF;
     border: none;
     border-radius: 21.5px;
@@ -66,7 +75,7 @@ button:active {
     overflow: auto;
     height: auto;
     padding-right: 30px;
-    width: calc(100% - 124px);
+    width: 600px;
     margin-left: 32px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
