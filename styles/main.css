@@ -66,23 +66,16 @@ body {
 #password-length-slider {
     width: 100%;
     margin-top: 16px;
-}
-
-input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
     background: transparent; /* Otherwise white in Chrome */
 }
   
-input[type=range]::-webkit-slider-thumb {
+#password-length-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
   
-input[type=range]:focus {
-    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-  
   /*Styling the thumb in Chrome*/
-input[type=range]::-webkit-slider-thumb {
+#password-length-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 25px;
     width: 25px;
@@ -93,7 +86,7 @@ input[type=range]::-webkit-slider-thumb {
 }
   
   /*Styling the track in Chrome*/
-  input[type=range]::-webkit-slider-runnable-track {
+#password-length-slider::-webkit-slider-runnable-track {
     width: 100%;
     height: 11px;
     cursor: pointer;
