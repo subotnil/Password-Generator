@@ -83,6 +83,7 @@ body {
     background: gray;
     cursor: pointer;
     margin-top: -6px; 
+    border: none;
 }
   
   /*Styling the track in Chrome*/
