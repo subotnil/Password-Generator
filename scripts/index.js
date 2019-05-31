@@ -2,6 +2,7 @@ function displayLength() {
     document.getElementById("character-length").innerHTML = document.getElementById("password-length-slider").value;
 }
 
+
 var password = "";
 function generatePassword() {
     if (event.keyCode == 13) {
@@ -30,4 +31,22 @@ function copyToClipboard() {
     var copyText = document.getElementById("password-display");
     copyText.select();
     document.execCommand("copy");
+}
+
+function deleteLast () {
+    document.getElementById("password-display").deleteRow(0);
+}
+
+//This is test code for downloading to file
+function saveToFile() {
+    
+    var textToSave = document.getElementById("password-display").innerHTML;
+    
+    var hiddenElement = document.createElement('a');
+
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = passName + ' Password.txt';
+    passwordNum = passwordNum + 1;
+    hiddenElement.click();
 }
