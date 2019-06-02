@@ -136,6 +136,10 @@ button:active {
     display: none;
 }
 
+#delete {
+    display: none;
+}
+
 #password-display {
     display: block;
     overflow: auto;

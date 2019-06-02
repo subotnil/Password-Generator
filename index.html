@@ -21,6 +21,9 @@
       <input id="password-length-slider" type="range" min="8" max="256" value="8" alt="Select Password Length" oninput="displayLength();">
       <p id="slider-display"><span id="character-length">8</span> Characters</p>
   </div>
+  <button id="delete" onclick="deleteLast()">
+    Delete
+  </button>
   <table id="password-display" alt=""></table>
   <footer id="footer">
     Made by <a href="https://github.com/subotnil" target="_blank" rel="noopener">Subotnil</a>
@@ -28,13 +31,8 @@
   <button id="copy" onclick="copyToClipboard()">
     Copy
   </button>
-  
   <button id="save" onclick="saveToFile()">
     Save
-  </button>
-
-  <button id="delete" onclick="deleteLast()">
-    Delete
   </button>
 </body>
 
