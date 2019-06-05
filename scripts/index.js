@@ -29,7 +29,7 @@ function generatePassword() {
 }
 
 function copyToClipboard() {
-    var copyText = document.getElementById("password-display");
+    var copyText = cell2.innerHTML;
     copyText.select();
     document.execCommand("copy");
 }
