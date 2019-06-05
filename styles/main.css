@@ -146,14 +146,6 @@ button:active {
     transform: scale(.9);
 }
 
-#copy {
-    display: auto;
-}
-
-#save {
-    display: none;
-}
-
 #delete {
     display: none;
 }
