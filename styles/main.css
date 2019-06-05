@@ -38,7 +38,7 @@ body {
 #account::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: gray;
   }
-#account::-moz-placeholder { /* Firefox 19+ */
+#account::placeholder { /* Firefox 19+ */
     color: gray;
   }
 
