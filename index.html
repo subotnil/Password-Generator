@@ -6,21 +6,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A password generator">
   <title>Password Generator</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://subotnil.github.io/passgen/styles/main.css"
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap" rel="stylesheet" async>
+  <link rel="stylesheet" href="C:\Users\theaw\Documents\GitHub\passgen\styles\main.css"
     type="text/css" async>
   <script src="https://subotnil.github.io/passgen/scripts/index.js" async></script>
 </head>
 
 <body>
-  <h1 id="main-title">
-    Live Test
-  </h1>
+  <h1 id="main-title">Password Generator</h1>
   <input id="account" type="text" placeholder="Enter account name" autocomplete="off" onkeydown="generatePassword()" alt="Account Name">
   <div id="slider-container">
-      <p id="slider-label">Select password length</p>
+      <label id="slider-label">Select password length</label>
       <input id="password-length-slider" type="range" min="8" max="256" value="8" alt="Select Password Length" oninput="displayLength();">
-      <p id="slider-display"><span id="character-length">8</span> Characters</p>
+      <label id="slider-display"><span id="character-length">8</span> Characters</label>
   </div>
   <button id="delete" onclick="deleteLast()">
     Delete
