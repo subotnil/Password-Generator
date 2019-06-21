@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A password generator">
   <title>Password Generator</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap" rel="stylesheet" async>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://subotnil.github.io/passgen/styles/main.css"
-    type="text/css" async>
-  <script src="https://subotnil.github.io/passgen/scripts/index.js" async></script>
+    type="text/css">
+  <script src="https://subotnil.github.io/passgen/scripts/index.js"></script>
 </head>
 
 <body>
   <h1 id="main-title">Password Generator</h1>
   <input id="account" type="text" placeholder="Enter account name" autocomplete="off" onkeydown="generatePassword()" alt="Account Name">
   <div id="slider-container">
-      <label id="slider-label">Select password length</label>
+      <p id="slider-label">Select password length</p>
       <input id="password-length-slider" type="range" min="8" max="256" value="8" alt="Select Password Length" oninput="displayLength();">
-      <label id="slider-display"><span id="character-length">8</span> Characters</label>
+      <p id="slider-display"><span id="character-length">8</span> Characters</p>
   </div>
   <button id="delete" onclick="deleteLast()">
     Delete
@@ -27,6 +26,12 @@
   <footer id="footer">
     Made by <a href="https://github.com/subotnil" target="_blank" rel="noopener">Subotnil</a>
   </footer>
+  <button id="copy" onclick="copyToClipboard()">
+    Copy
+  </button>
+  <button id="save" onclick="saveToFile()">
+    Save
+  </button>
 </body>
 
 </html>
